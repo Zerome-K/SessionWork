@@ -1,3 +1,14 @@
+/*
+	1. Getting Array Size and Values.
+	2. get rotation Direction and Rotate Times.
+	3. Store arr[0] to arr[times] in anothher array,
+		-> Shift Arr[times] to arr[n-1] -> arr[0] as Starting position;
+	4.Finally add auxillary array next to shifted array values.
+	
+	Functions : rotateRight, rotateLeft;
+
+*/
+
 package arrays;
 
 import java.util.Arrays;
@@ -35,7 +46,7 @@ public class ArrayRotation {
 		input.close();
 
 	}
-
+	// Array Rotate Left
 	private static int[] rotateLeft(int[] arr, int d) {
 		
 		int[] rotated = new int[arr.length];
@@ -59,7 +70,7 @@ public class ArrayRotation {
 		return rotated;
 		
 	}
-	
+	// Array Rotate Right
 	private static int[] rotateRight(int[] arr, int d) {
 		
 		int[] rotated = new int[arr.length];
