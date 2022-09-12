@@ -1,3 +1,13 @@
+/*
+	Matrix Multiplication;
+	
+	--> 1. Get two a & b Matrix (Size and Values).
+	--> 2. Multiply a matrix row with b matrix column.
+		-> Stored and Print reult Matrix.
+		
+	Functions : matrixMultiply.
+*/
+
 package arrays;
 
 import java.util.Arrays;
@@ -54,7 +64,7 @@ public class MatrixMultiplication {
 		for(int[] x : ans)System.out.println(Arrays.toString(x));
 		
 	}
-	
+	// Multiply mat1 row with mat2 columns
 	public static int[][] matrixMultiply(int[][] mat1, int[][] mat2){
 		
 		int row , col;
