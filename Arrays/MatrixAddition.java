@@ -5,6 +5,8 @@
        option 1 : performs Adddition
        option 2 : Performs Subraction
        option 3 : Scalar Multiply --> Get Multiplier and Select Matrix and then Multiply with Multiplier.
+       
+       4 Functions : Addition, Subtraction, Scalar Multiplication, Display (matrix displaying):
 
 */
 
