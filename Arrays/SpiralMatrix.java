@@ -1,3 +1,10 @@
+/*
+	1. Declaring Four points (top, dow, right, left);
+	2. By using this Points Print Array values with for loop and decrease(top, down, right, left) values respectively;
+	
+	Functions : printSpiral.
+*/
+
 package arrays;
 
 import java.util.Scanner;
