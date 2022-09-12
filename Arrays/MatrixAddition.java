@@ -1,3 +1,13 @@
+/* Matrix Addition , Subraction, Scalar Multiply ;
+        
+       Get Operations and Perform;
+       
+       option 1 : performs Adddition
+       option 2 : Performs Subraction
+       option 3 : Scalar Multiply --> Get Multiplier and Select Matrix and then Multiply with Multiplier.
+
+*/
+
 package Array;
 
 import java.util.Arrays;
@@ -45,7 +55,9 @@ public class MatrixAddition {
 
             }
         }
-
+        
+        /* Operations Selection*/
+        
         System.out.print("ENTER OPERATIONS 1-ADD / 2-SUB / 3-SCALAR_MULTIPLY : ");
         int op = in.nextInt();
         if(op == 1) display((matrixAdd(arr1, arr2)));
