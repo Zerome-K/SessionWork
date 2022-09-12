@@ -146,7 +146,7 @@ SHIFT OPERATORS:
 	
 	Java Unsigned Right Shift(>>>):
 
-		-> The unsigned right-shift operator is a special type of right-shift operator that doesn't use the sign 		   bit for filling the trailing position. 
+		-> The unsigned right-shift operator is a special type of right-shift operator that doesn't use the sign bit for filling the trailing position. 
 
 		-> The unsigned right-shift operator always fills the trialing position by 0.
 
