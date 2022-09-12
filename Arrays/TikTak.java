@@ -1,3 +1,22 @@
+/*
+	TIK-TAK-TOE GAME:
+	
+	--> 1. Declare a Array of Size 9;
+	--> 2. Get User Symbols X or O and Place;
+	--> 3. Check the Place for Reservation;
+		->Check Place Value for Valid/Invaild:
+			->If Invalid Repeat current loop and Get new Value;
+			-> else
+		   		-> If already occupied Get Different Place and Assign.
+		   		-> Else Place the Symbols and Call Check Function.
+	--> 4. Check Function check the Array Rows, Columns and Diagnol parts in an Array.
+		   -> If all values are equal return the Winner with Symbol.
+		   -> Else Continue Game.
+	--> 5. If game ends with all place Occupied and Doesn't return any Player Values -> it becomes Draw Print "Draw".
+	
+	Functions : Check, Mark and Display.
+*/
+
 import java.util.Scanner;
 
 public class TikTak{
