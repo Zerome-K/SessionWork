@@ -1,3 +1,17 @@
+/* 
+
+    Finding Saddle Points of Matrix;
+    
+    Saddle Point - An element which is both the largest element in its column and the smallest element in its row.
+
+    Functions : SaddlePoint , MinMax.
+    
+    Procedure : --> First Find Min and Max of Rows,
+                --> Second Find Min and Max of Columns,
+                --> Finally check Conditions if a Max in row Present in Min in col -> If satisfies its a Saddle Value,
+                --> Return Saddle Values.
+*/
+
 package Array;
 
 import java.util.Scanner;
@@ -51,6 +65,15 @@ public class SaddlePointOfMatrix {
         return sb.toString();
     }
 
+    
+    /* Finding Min and Max of Matrix;
+    
+       Parameters            --> Int Nested Array and a boolean value;
+       if(boolean == true    --> Checks Rows;
+       else                  --> Checks Columns;
+       Return                --> Minimum & Maximum of each Row || Col.
+    */
+    
     private static int[][] minAndMax(int[][] arr, boolean flag) {
 
         int row = arr.length, col = arr[0].length, temp, max , min, toggle = 1;
