@@ -1,17 +1,12 @@
 package cricket_score;
 
-
-
 public class Player {
-
     String name, position;
     int totalRuns, currentRuns;
-
     public Player(String name, String position){
         this.name = name;
         this.position = position;
     }
-
     public static String centerString (int width, String s) {
         return String.format("%-" + width  + "s", String.format("%" + (s.length() + (width - s.length()) / 2) + "s", s));
     }
@@ -25,10 +20,4 @@ public class Player {
         System.out.println("\n-------------------------------------------------");
         return "";
     }
-
-    public static void main(String[] args) {
-        Player p = new Player("Zerome", "cap");
-        System.out.println(p);
-    }
-
 }
