@@ -1,31 +1,29 @@
 package cricket_score;
 
 import java.util.Scanner;
-
 public class Team {
-
     Scanner in = new Scanner(System.in);
     Player[] self = new Player[11];
-    Player[] csk = {new Player("Dhoni", "Captain"), new Player("Jadeja", "All Rounder"),
-                    new Player("Raina", "All Rounder"),new Player("Bravo", "Bowler"),
-                    new Player("Kholi", "BatsMan"),new Player("SKY", "BatsMan"),
-                    new Player("Shewag", "Batsman"), new Player("Pandya", "All Rounder"),
-                    new Player("Zerome", "BatsMan"),new Player("Rohit", "Vice_CAptain"),new Player("Sachin", "BatsMan")};
+    Player[] csk = {new Player("FAF", "BATSMAN"), new Player("JADEJA", "ALL ROUNDER"),
+                    new Player("RAINA", "ALL ROUNDER"),new Player("D BRAVO", "BOWLER"),
+                    new Player("MOEEN ALI", "BATSMAN"),new Player("RUTURAJ", "BATS MAN"),
+                    new Player("RAYUDU", "BATSMAN"), new Player("DHONI", "CAP/WK"),
+                    new Player("DUBE", "BATSMAN"),new Player("UTHAPPA", "VC"),new Player("VIJAY", "ALL ROUNDER")};
 
-    Player[] mi = {new Player("Rohit", "Captain"), new Player("HARDIK", "All Rounder"),
-            new Player("Harbhajan", "All Rounder"),new Player("Butler", "Bowler"),
-            new Player("Pollard", "BatsMan"),new Player("HariPrasath", "BatsMan"),
-            new Player("Taylor", "Batsman"), new Player("Warner", "All Rounder"),
-            new Player("Zerome", "BatsMan"),new Player("Shewag", "Vice_CAptain"),new Player("MaxWell", "BatsMan")};
+    Player[] mi = {new Player("SKY", "BATSMAN"), new Player("HARDIK", "BATSMAN"),
+            new Player("I KISAN", "WK"),new Player("POLLARD", "ALL ROUNDER"),
+            new Player("KRUNAL", "ALL ROUNDER"),new Player("CHAHAR", "BOWLER"),
+            new Player("ROHIT", "CAP"), new Player("TIWARY", "BATSMAN"),
+            new Player("BUMRAH", "BOWLER"),new Player("ARCHER", "BOWLER"),new Player("MITCHELL", "BOWLER")};
 
-    Player[] rcb= {new Player("Kohli", "Captain"), new Player("ABD", "All Rounder"),
-            new Player("Chahal", "All Rounder"),new Player("Bumrah", "Bowler"),
-            new Player("Stonis", "BatsMan"),new Player("HariPrasath", "BatsMan"),
-            new Player("Gayle", "Batsman"), new Player("Ricky", "All Rounder"),
-            new Player("Chris", "BatsMan"),new Player("Warner", "Vice_CAptain"),new Player("MaxWell", "BatsMan")};
+    Player[] rcb= {new Player("ABD", "BATSMAN"), new Player("PADIKKAL", "BATSMAN"),
+            new Player("KOHLI", "BATSMAN"),new Player("GAYLE", "BATSMAN"),
+            new Player("STOINIS", "ALL ROUNDER"),new Player("DUBE", "ALL ROUNDER"),
+            new Player("PATEL", "WK"), new Player("SUNDAR", "ALL ROUNDER"),
+            new Player("CHAHAL", "BOWLER"),new Player("UMESH", "BOWLER"),new Player("SIRAJ", "BOWLER")};
+    
     String name;
      Team() {
-
          this.getplayer();
     }
 
@@ -38,17 +36,17 @@ public class Team {
 
     void getplayer(){
 
-        System.out.println("Enter Team Name :");
+        System.out.print("ENTER TEAM NAME :");
 
         name = in.next();
 
         for (int i = 0; i < 11; i++) {
 
-            System.out.println("Enter Player Name :");
+            System.out.print("\nENTER PLAYER NAME :");
 
             String name = in.next();
 
-            System.out.println("Enter Position :");
+            System.out.print("\nENTER POSITION :");
 
             String pos = in.next();
 
@@ -77,4 +75,5 @@ public class Team {
 
          return "";
      }
+    
     }
