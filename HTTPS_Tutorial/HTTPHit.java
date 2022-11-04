@@ -18,17 +18,13 @@ public class HTTPHit {
             int responseCode = urlConnection.getResponseCode();
             if (responseCode == 200) {
                 BufferedReader reader = new BufferedReader(new InputStreamReader(urlConnection.getInputStream()));
-                String line = reader.readLine();
-                while (line != null) {
-                    System.out.println(line);
-                    line = reader.readLine();
-                }
+                String line = reader.readAll();
+                System.out.println(line);
             } else System.out.println("RESPONSE ERROR");
         } catch(IOException e){
                 System.out.println("NETWORK FAILURE");
             }
         }
-
         public static void main (String[]args){
             HTTPHit hh = new HTTPHit();
             hh.getCall();
